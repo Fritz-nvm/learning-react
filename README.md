@@ -1,74 +1,122 @@
-# React + TypeScript + Vite
+# Learning React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal learning repository for exploring React and its ecosystem, built with Vite for fast development and optimal performance.
 
-Currently, two official plugins are available:
+## 🚀 About This Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This repository documents my journey learning React's core concepts and advanced features through hands-on examples and mini-projects. Each section focuses on specific React concepts with practical implementations.
 
-## React Compiler
+## 📚 Learning Path
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Core Concepts
 
-## Expanding the ESLint configuration
+- [ ] Components & JSX
+- [ ] Props & State
+- [ ] Event Handling
+- [ ] Conditional Rendering
+- [ ] Lists & Keys
+- [ ] Forms & Controlled Components
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Hooks
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- [ ] useState
+- [ ] useEffect
+- [ ] useContext
+- [ ] useReducer
+- [ ] useMemo & useCallback
+- [ ] Custom Hooks
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Advanced Topics
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- [ ] React Router
+- [ ] Context API
+- [ ] Error Boundaries
+- [ ] Higher-Order Components
+- [ ] Render Props
+- [ ] Performance Optimization
+
+### Ecosystem
+
+- [ ] State Management (Zustand/Redux)
+- [ ] Testing (Jest + React Testing Library)
+- [ ] API Integration
+- [ ] Component Libraries
+
+## 🛠️ Tech Stack
+
+- **React** - UI library
+- **Vite** - Build tool and dev server
+- **JavaScript/TypeScript** - Programming language
+- **CSS/SCSS** - Styling
+
+## 📦 Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/learning-react.git
+cd learning-react
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Install dependencies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
-# learning-react
+
+3. Start the development server:
+
+```bash
+npm run dev
+```
+
+## 🎯 Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## 📁 Project Structure
+
+```
+learning-react/
+├── public/                 # Static assets
+├── src/
+│   ├── components/        # Reusable components
+│   ├── hooks/            # Custom React hooks
+│   ├── pages/            # Page components
+│   ├── utils/            # Utility functions
+│   ├── styles/           # Global styles
+│   └── main.jsx          # Application entry point
+├── examples/             # Code examples by topic
+└── docs/                 # Learning notes and documentation
+```
+
+## 🎓 Learning Resources
+
+- [React Official Documentation](https://react.dev/)
+- [Vite Documentation](https://vitejs.dev/)
+- [JavaScript Info](https://javascript.info/)
+- [MDN Web Docs](https://developer.mozilla.org/)
+
+## 📝 Notes
+
+This is a personal learning repository where I:
+
+- Experiment with React features
+- Build small projects to understand concepts
+- Document my learning progress
+- Practice best practices and patterns
+
+## 🤝 Contributing
+
+While this is primarily a personal learning repository, suggestions and feedback are welcome! Feel free to open issues or submit pull requests for improvements.
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+_Happy learning! 🚀_
