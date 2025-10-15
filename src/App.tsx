@@ -4,7 +4,16 @@ import Button from "./components/Button";
 import { useState } from "react";
 
 function App() {
-  let items = ["Bamenda", "Buea", "Yaounde", "Douala", "Limbe", "Bambili"];
+  let items = [
+    "Bamenda",
+    "Buea",
+    "Yaounde",
+    "Douala",
+    "Limbe",
+    "Bambili",
+    "Kumba",
+    "Kribi",
+  ];
   const handleSelectionItem = (item: string) => {
     console.log(item);
   };
